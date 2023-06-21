@@ -13,7 +13,7 @@ Here note that if the libraries mentioned in the disclaimer section are not inst
 
 ## ***DISCLAIMER***
 
-* When my model is put to testing, it many a time is expected to generate sentences which don't make much sense. It is therefore my humble request to the evaluator to please also focus on the semantics. As aforementioned, I did not have the adequete RAM to train whole of the model. Even google colab and kaggle could not handle the dataset and repeatedly crashed.
+* When my model is put to testing, it many a time is expected to generate sentences which don't make much sense. It is therefore my humble request to the evaluator to please also focus on the semantics. I did not have the adequete RAM to train the model on whole of the data. Even google colab and kaggle could not handle the dataset and repeatedly crashed.
 
   I also urge the evaluator to generate atleast 20 sentences while testing to get a fair idea of the model's performance.
 
