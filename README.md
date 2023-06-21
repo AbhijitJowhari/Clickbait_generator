@@ -49,9 +49,9 @@ Now Let me breeze you through my work.
 
 ## ***A walk-through***
 
-* **Run.py:** This is the main python file responsible for putting together all of the stuff and running my language model. Just clone my repo and run the terminal in the API folder. Pass the following argument:  "python run.py" 
+* **Run.py:** This is the main python file responsible for putting together all of the stuff and running my language model.
 
-* **app.py:** This is repsonsible for the API of my model. This also provides my model a very rudimentary frontend which is designed using some basic Stremalit scripts.
+* **app.py:** This is repsonsible for the API of my model. This also provides my model a very rudimentary frontend which is designed using some basic Streamlit scripts.
 
 * **Clickbait_generator.py:** This is the heart of my model. This puts togeather all the files (like weights.sav,seed.sav etc.) and returns a randomly generated clickbait when queried using the API.
 
@@ -63,7 +63,7 @@ Now Let me breeze you through my work.
 
 * **itos.sav:** This files stores the inverse mapping of the above dictionary stored in the above file.
 
-* **notebook.ipynb:**  This is notebook which containes the training code of the model. It is to be kindly noted that this notebook file is not required to run my model is just for the evaluators to asses my training of the model. 
+* **notebook.ipynb:**  This is the notebook which containes the training code of the model. It is to be kindly noted that this notebook file is not required to run my model and is just for the evaluator to asses my training of the model. 
 
 
 ## ***Detailed attestation***
@@ -125,3 +125,12 @@ This is the file which runs whole of my language model along with its frontend.
 * activation function : softmax
 * loss fuction: logarithm of the softmax probability
 
+  ## ***Acknowledgements***
+I would give a lot of credit to Andrej Karpathy whom I followed to build this clickbait generator. Also, some of my code snippits are mainly inspired from his work. The video that I followed is:
+> https://www.youtube.com/watch?v=PaCmpygFfXo
+
+I would also like to thank shivam kolhe for his GeeksForGeeks article which I followed:
+> https://www.geeksforgeeks.org/a-beginners-guide-to-streamlit/
+
+I also took help from this medium article:
+> https://towardsdatascience.com/using-joblib-to-speed-up-your-python-pipelines-dd97440c653d
