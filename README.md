@@ -1,11 +1,18 @@
 # **Clickbait_generator**
 
-This a repository that contains the API for the clickbait generator. All the required files are stored as a package in the ‘API’ folder. 
+This a repository that contains the API for the clickbait generator. All the required files are stored as a package in the ‘API’ folder.
 
-## ***DISCLAIMER***
+## ***Instructions to run the model***
 * The model needs the weights.sav file to load the weights. Please use the below link to download the weights.sav file and store it in the API folder.
 > https://drive.google.com/file/d/183ogoZ3mqCo7E9OqDxbR7IlCUaaMs-Fr/view?usp=sharing
-> 
+* After keeping ***all the required files*** in the API folder, Open CMD in that folder and pass the following argument:
+> python run.py
+
+Here note that if the libraries mentioned in the disclaimer section are not installed then it will first install them and then run the API. This may take a few minutes.
+* After this the API shall run and the model is ready for testing.
+
+## ***DISCLAIMER***
+
 * When my model is put to testing, it many a time is expected to generate sentences which don't make much sense. It is therefore my humble request to the evaluator to please also focus on the semantics. As aforementioned, I did not have the adequete RAM to train whole of the model. Even google colab and kaggle could not handle the dataset and repeatedly crashed.
 
   I also urge the evaluator to generate atleast 20 sentences while testing to get a fair idea of the model's performance.
@@ -46,7 +53,7 @@ Now Let me breeze you through my work.
 
 * **app.py:** This is repsonsible for the API of my model. This also provides my model a very rudimentary frontend which is designed using some basic Stremalit scripts.
 
-* **Clickbait_generator:** This is the heart of my model. This puts togeather all the files (like weights.sav,seed.sav etc.) and returns a randomly generated clickbait when queried using the API.
+* **Clickbait_generator.py:** This is the heart of my model. This puts togeather all the files (like weights.sav,seed.sav etc.) and returns a randomly generated clickbait when queried using the API.
 
 * **Weights.sav:** This file stores all the trained weights of the model. This is basically my trained model which gets loaded everytime a query is received.
 
@@ -79,7 +86,7 @@ Below, I convert the inputs to One-hot encodings to feed into the neural network
 
 <img width="702" alt="3" src="https://github.com/AbhijitJowhari/Clickbait_generator/assets/127199703/ff8d05af-81b5-48c8-b609-d2ef2883d98d">
 
-### **Clickbait_generator** 
+### **Clickbait_generator.py** 
 ---
 
 Here again we import all the necessary modules.
@@ -91,7 +98,7 @@ At the end I have used the'softmax' acivation function to get the probability di
 
 <img width="434" alt="CB1" src="https://github.com/AbhijitJowhari/Clickbait_generator/assets/127199703/aacdbee8-1e7f-43d7-836f-778e758451af">![softmax](https://github.com/AbhijitJowhari/Clickbait_generator/assets/127199703/81cfe7ab-b46f-4b08-acfb-e71efd406b57)
 
-### **app**
+### **app.py**
 ---
 
 Here, this is my API-cum-frontend python code. This has been coded using the streamlit library.
