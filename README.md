@@ -3,14 +3,17 @@
 This a repository that contains the API for the clickbait generator. All the required files are stored as a package in the ‘API’ folder. 
 
 ## ***DISCLAIMER***
+* The model needs the weights.sav file to load the weights. Please use the below link to download the weights.sav file and store it in the API folder.
+> https://drive.google.com/file/d/183ogoZ3mqCo7E9OqDxbR7IlCUaaMs-Fr/view?usp=sharing
+> 
 * When my model is put to testing, it many a time is expected to generate sentences which don't make much sense. It is therefore my humble request to the evaluator to please also focus on the semantics. As aforementioned, I did not have the adequete RAM to train whole of the model. Even google colab and kaggle could not handle the dataset and repeatedly crashed.
 
   I also urge the evaluator to generate atleast 20 sentences while testing to get a fair idea of the model's performance.
 
 * Please have a proper internet connection while testing if the local machine on which model is being tested does not have one (or more) of the following libraries installed:
-  >torch==2.0.1,
-	>joblib==1.2.0,
-	>streamlit==1.23.1
+  >torch==2.0.1
+  >joblib==1.2.0,
+  >streamlit==1.23.1
 
 * The frontend should load in about 30 seconds after run.py is executed from cmd. Please be a little patient :)
 
